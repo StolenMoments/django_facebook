@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{name}} 님 안녕하세요? {{cnt}} 번째 방문입니다. {{age}} 입니다. <br>
+{{message}}<br>
+<h2>나의 일기</h2>
+<h4>{{ diary.0 }}</h4>
+<h4>{{ diary.1 }}</h4>
+<h4>{{ diary.2 }}</h4>
+
+
+{% for post in diary %}
+<h4>{{post}}</h4>
+{% endfor %}}
+<a href="\play">Play 로 이동하기</a>
+<a href="\play2">Play2 로 이동하기</a>
+</body>
+</html>
